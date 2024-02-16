@@ -124,3 +124,18 @@ header .conteiner ul{
     height: 100%;
     background-color: #b5ddff;
  }
+
+
+  /* --/-- TABLET  -- \--  */
+     /* da 0 a 992px  */
+
+     @media screen and (max-width: 992px) {
+        
+     }
+
+     /* --/-- MOBILE  -- \--  */
+     /* da 0 a 768px  */
+
+     @media screen and (max-width: 768px) {
+        
+     }
