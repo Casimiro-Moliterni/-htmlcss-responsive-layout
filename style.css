@@ -41,9 +41,19 @@ img {
 .btn-small{}
 .btn-large{}
 
+button {
+  border: none;
+  background: none;
+}
+header button i{
+  font-size: 25px;
+  color: white;
+  display: none;
+}
+
 /* --/-- TIPOGRAFY-- \--  */
 body{
-    font-family:PT-Sans; 
+    font-family:Pt-Sans; 
     line-height: 1.5;    
 }
 
@@ -101,6 +111,12 @@ header h3{
 
 header{
 
+ padding: 15px 0;
+}
+
+ nav { 
+  display: flex;
+  align-items: center;
 }
 
 header .conteiner{
@@ -111,7 +127,14 @@ header .conteiner{
 header .conteiner ul{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 27px;
+}
+
+header .conteiner li a{
+  color: white;
+  font-size: 14px;
+  font-family: inherit;
+  text-decoration: none;
 }
 
 
@@ -130,6 +153,15 @@ header .conteiner ul{
      /* da 0 a 992px  */
 
      @media screen and (max-width: 992px) {
+
+      header .conteiner{
+        width: 100%;
+        padding: 0 30px;
+      }
+
+      header nav{
+        display: none;
+      }
         
      }
 
@@ -137,5 +169,7 @@ header .conteiner ul{
      /* da 0 a 768px  */
 
      @media screen and (max-width: 768px) {
+
+
         
      }
