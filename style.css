@@ -1,0 +1,114 @@
+ /* --/-- REGULAR BASE -- \--  */
+
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+ .conteiner{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+
+img {
+    max-width: 100%;
+}
+
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+ }
+
+ .col{
+    padding: 0 10px;
+ }
+
+ .col-grow{
+    flex-grow: 1;
+ }
+
+
+/* --/-- BTN-- \--  */
+
+.btn{}
+.btn-apple{}
+.btn-round{}
+.btn-small{}
+.btn-large{}
+
+/* --/-- TIPOGRAFY-- \--  */
+body{
+    font-family:PT-Sans;
+
+      
+}
+
+.pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .pt-sans-regular-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .pt-sans-bold {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .pt-sans-bold-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+header p{
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+header h3{
+    font-family: inherit;
+    font-weight: 700;
+
+}
+
+
+
+/* --/-- HEADER-- \--  */
+
+header{
+
+}
+
+header .conteiner{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .conteiner ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+ /* --/-- SECTION INTRO -- \--  */
+ #intro .col{
+   width: calc(100% / 3);
+ }
+
+ .card{
+    height: 100%;
+ }
