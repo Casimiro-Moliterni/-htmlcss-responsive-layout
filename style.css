@@ -35,7 +35,13 @@ img {
 
 /* --/-- BTN-- \--  */
 
-.btn{}
+.btn{
+  font-size: 14px;
+  font-weight: 500;
+  padding:8px 16px;
+  border-radius: 20px;
+  background-color: white;
+}
 .btn-apple{}
 .btn-round{}
 .btn-small{}
@@ -45,7 +51,8 @@ button {
   border: none;
   background: none;
 }
-header button i{
+
+header .btn-tm {
   font-size: 25px;
   color: white;
   display: none;
@@ -114,7 +121,7 @@ header{
  padding: 15px 0;
 }
 
- nav { 
+nav{
   display: flex;
   align-items: center;
 }
@@ -128,6 +135,7 @@ header .conteiner ul{
     list-style: none;
     display: flex;
     gap: 27px;
+    align-items: center;
 }
 
 header .conteiner li a{
@@ -157,6 +165,9 @@ header .conteiner li a{
       header .conteiner{
         width: 100%;
         padding: 0 30px;
+      }
+      header .btn-tm{
+        display: block;
       }
 
       header nav{
