@@ -24,12 +24,12 @@ img {
 
  .row{
     display: flex;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: -10px;
+    margin-right: -10px;
  }
 
  .col{
-    padding: 0 15px;
+    padding: 0 10px;
  }
 
  .col-grow{
@@ -49,11 +49,12 @@ img {
 .btn-apple{
   background-color: #0084fd;
   font-size: 14px;
-  letter-spacing: 10px;
+  letter-spacing: 3px;
   color: white;
   padding: 10px 55px;
   font-family: inherit;
   border-radius: 40px;
+  font-weight: 700;
 }
 .btn-round{}
 .btn-small{}
@@ -72,7 +73,7 @@ header .btn-tm {
 
 /* --/-- TIPOGRAFY-- \--  */
 body{
-    font-family:Pt-Sans; 
+    font-family:"Pt Sans"; 
     line-height: 1.5;    
 }
 
@@ -161,19 +162,20 @@ header .conteiner li a{
  /* --/-- SECTION INTRO -- \--  */
  #intro .col{
    width: calc(100% / 3);
+   margin-bottom: 20px;
  }
 
- #intro .card {
+ #intro .card 
+{
     height: 100%;
     background-color: #b5ddff;
-    padding: 30px 20px;
  }
- #intro .card-left,#intro .card-right {
+ #intro .card{
   height: 100%;
   background-color: #b5ddff;
   padding: 30px 20px 0 20px;
-  
-}
+  border-radius: 20px;
+ }
 
 #intro{
   padding-top: 50px;
@@ -186,18 +188,24 @@ header .conteiner li a{
 #intro .btn-apple{
   display: flex;
   gap: 8px;
+  align-items: center;
 }
 
-#intro .col-grow {
-  display: flex;
+.col-grow button {
+  color: white;
+  font-size: 14px;
 }
-#intro .col-grow .card-left,
-#intro .col-grow .card-right{
-  width: 50%;
-}
-#intro i{
-  font-size: 50px;
+
+#intro .card.text-center i {
+  font-size: 80px;
   color: #0084fd;
+}
+
+.padding-30 {
+  padding-bottom: 30px;
+}
+#intro .col-grow{
+  display: flex;
 }
 
   /* --/-- TABLET  -- \--  */
@@ -216,6 +224,8 @@ header .conteiner li a{
       header nav{
         display: none;
       }
+
+      
         
      }
 
