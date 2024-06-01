@@ -11,7 +11,6 @@
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 40px;
  }
 
 img {
@@ -59,7 +58,15 @@ img {
   font-weight: 700;
 }
 .btn-round{}
-.btn-small{}
+.btn-small{
+
+  height:50px;
+  width: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .btn-large{}
 
 button {
@@ -134,6 +141,7 @@ body{
 header{
 
  padding: 15px 0;
+margin-bottom: 50px;
 }
 
 nav{
@@ -227,6 +235,70 @@ flex-wrap: wrap;
   flex-grow: 1;
 }
 
+/* #section card  partners  */
+#partners{
+  background: #9792E4;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  color: white;
+}
+#partners .conteiner{
+  width: 50%;
+}
+#partners .col{
+  width: calc(100% / 2);
+}
+#partners .col .img{
+  display: flex;
+  justify-content: start;
+  padding-bottom: 25px;
+}
+#partners .col .img img{
+  height: 100%;
+  object-fit: contain;
+}
+#partners .col.right .img{
+justify-content: center;
+}
+#partners .col .text{
+ width: 70%;
+}
+#partners .col .text h2{
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+#partners .col.right{
+  display: flex;
+  align-items: end;
+  text-align: center;
+}
+#partners .col .card{
+  padding: 20px 30px;
+  height: 70%;
+  background-color: white;
+  border-radius: 20px;
+}
+#partners .col .card.right .img img{
+ height: 300px;
+ object-fit: cover;
+} 
+#partners .right h2,
+#partners .right p{
+  color: black;
+}
+#partners .right h2{
+  padding-bottom: 20px;
+}
+#partners .right p{
+  padding-bottom: 30px;
+}
+.bg-purple{
+  background-color: #9792E4;
+}
+.card .right {
+  display: flex;
+  justify-content: center;
+}
   /* --/-- TABLET  -- \--  */
      /* da 0 a 992px  */
 
