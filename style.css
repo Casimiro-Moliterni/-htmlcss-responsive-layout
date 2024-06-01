@@ -7,10 +7,11 @@
  }
 
  .conteiner{
-    max-width: 1140px;
+    width:60%;
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 40px;
  }
 
 img {
@@ -24,6 +25,7 @@ img {
 
  .row{
     display: flex;
+    flex-wrap: wrap;
     margin-left: -10px;
     margin-right: -10px;
  }
@@ -165,11 +167,6 @@ header .conteiner li a{
    margin-bottom: 20px;
  }
 
- #intro .card 
-{
-    height: 100%;
-    background-color: #b5ddff;
- }
  #intro .card{
   height: 100%;
   background-color: #b5ddff;
@@ -177,18 +174,39 @@ header .conteiner li a{
   border-radius: 20px;
  }
 
-#intro{
-  padding-top: 50px;
-  padding-bottom: 105px;
-}
+
 #intro img{
   display: block;
+
 }
+
 
 #intro .btn-apple{
   display: flex;
   gap: 8px;
   align-items: center;
+}
+.col-grow .card{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+}
+
+.card-grow-left{
+  width: 50%;
+}
+
+.col-grow .wrapper-img{
+  padding-top: 70px;
+  width: 50%;
+}
+.col-grow .wrapper-img .img{
+  height: 270px;
+}
+.col-grow .wrapper-img .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .col-grow button {
@@ -206,6 +224,7 @@ header .conteiner li a{
 }
 #intro .col-grow{
   display: flex;
+  flex-grow: 1;
 }
 
   /* --/-- TABLET  -- \--  */
@@ -220,20 +239,52 @@ header .conteiner li a{
       header .btn-tm{
         display: block;
       }
-
       header nav{
         display: none;
       }
-
-      
-        
+      .col.col-grow{
+       width: 100%;
+       flex-wrap: wrap;
+      }
+      .col-grow .card-grow-left{
+        width: 100%;
+      }
+      .col-grow .wrapper-img{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+      }
+      #intro .conteiner{ 
+        width:90%;
+      }
      }
 
      /* --/-- MOBILE  -- \--  */
      /* da 0 a 768px  */
 
      @media screen and (max-width: 768px) {
-
-
+      .conteiner{
+        width: 90%;
+      }
+      #intro .col{
+        width:calc(100% / 1);
+      }
+      .col.col-grow{
+        width: 100%;
+        flex-wrap: wrap;
+       }
+       .col-grow .card-grow-left{
+         width: 100%;
+       }
+       .card-grow-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+       .col-grow .wrapper-img{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+       }
         
      }
