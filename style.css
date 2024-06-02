@@ -266,6 +266,7 @@ justify-content: center;
 #partners .col .text h2{
   padding-top: 120px;
   padding-bottom: 40px;
+  font-size: clamp(28px, 2.5vw, 45px); 
 }
 #partners .col.right{
   display: flex;
@@ -276,7 +277,7 @@ justify-content: center;
   padding: 20px 30px;
   height: 70%;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 40px;
 }
 #partners .col .card.right .img img{
  height: 300px;
@@ -328,15 +329,52 @@ justify-content: center;
       }
       #intro .conteiner{ 
         width:90%;
-      }
-     }
+        padding: 0 20px;
 
+      }
+      #partners .conteiner{
+        width: 90%;
+        padding: 0 20px;
+      }
+      #partners .col{
+        width: calc(100% / 1);
+      }
+      #partners .col .img{
+       justify-content: center;
+      }
+      #partners .col .text{
+        width: 100%;
+      }
+      #partners .col .text h2{
+        font-size: 70px;
+       }
+       #partners .col .text p{
+        font-size: 22px;
+       }
+       #partners .col .card.right{
+        height: 100%;
+       }
+       #partners .col.right{
+        margin-top: 30px;
+     }
+     #partners .col .card.right .img img{
+      height: 100%;
+      object-fit: cover;
+     } 
+     html,
+     body{
+       width:100%;
+       overflow-x:hidden;
+     }
+    }
      /* --/-- MOBILE  -- \--  */
      /* da 0 a 768px  */
 
      @media screen and (max-width: 768px) {
-      .conteiner{
+     
+     #partners .conteiner{
         width: 90%;
+        padding: 0;
       }
       #intro .col{
         width:calc(100% / 1);
@@ -357,6 +395,26 @@ justify-content: center;
          width: 100%;
          display: flex;
          justify-content: center;
+         padding-top: 40px;
        }
-        
-     }
+       .col-grow .wrapper-img .img>img{
+        object-fit: cover;
+       }
+       #partners .col .text h2{
+        font-size: 30px;
+        text-wrap: nowrap;
+       }
+       #partners .col.right{
+        margin-top:40px ;
+       }
+       #partners .col .text p{
+        font-size: 20px;
+       }
+       .btn-apple{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+    }
+    
