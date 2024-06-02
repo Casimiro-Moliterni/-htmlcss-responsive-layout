@@ -260,9 +260,7 @@ flex-wrap: wrap;
 #partners .col.right .img{
 justify-content: center;
 }
-#partners .col .text{
- width: 70%;
-}
+
 #partners .col .text h2{
   padding-top: 120px;
   padding-bottom: 40px;
@@ -300,6 +298,57 @@ justify-content: center;
   display: flex;
   justify-content: center;
 }
+
+/* id expert_partners  */
+#expert_partners{
+  padding-top: 60px;
+  text-align: center;
+  color: white;
+  padding-bottom: 70px;
+}
+#expert_partners .col{
+  width: 100%;
+  margin-bottom: 30px;
+}
+#expert_partners .col .card{
+  background-color: #9792e4;
+  border-radius: 30px;
+  padding:20px 35px 40px 10px ;
+  display: flex;
+  align-items: center;
+}
+
+#expert_partners .card .img-left{
+width: 200px;
+height: 200px;
+display: flex;
+}
+#expert_partners .card .img-left img{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+#expert_partners .card .text{
+  width: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: white;
+}
+#expert_partners .text{
+  color: black;
+}
+#expert_partners .text:nth-child(3){
+  padding-bottom: 45px;
+}
+#expert_partners h2.text{
+  font-size: 40px;
+  color: #9792E4;
+  padding-bottom: 45px;
+}
   /* --/-- TABLET  -- \--  */
      /* da 0 a 992px  */
 
@@ -327,14 +376,10 @@ justify-content: center;
         display: flex;
         justify-content: start;
       }
-      #intro .conteiner{ 
+      .conteiner{ 
         width:90%;
         padding: 0 20px;
 
-      }
-      #partners .conteiner{
-        width: 90%;
-        padding: 0 20px;
       }
       #partners .col{
         width: calc(100% / 1);
@@ -365,6 +410,12 @@ justify-content: center;
      body{
        width:100%;
        overflow-x:hidden;
+     }
+     #expert_partners .card{
+      gap: 15px;
+     }
+     #expert_partners .card .text{
+      width: 65%;
      }
     }
      /* --/-- MOBILE  -- \--  */
@@ -415,6 +466,20 @@ justify-content: center;
         display: flex;
         align-items: center;
         justify-content: center;
+       }
+       #expert_partners .card{
+        flex-wrap: wrap;
+       }
+       #expert_partners .card{
+        justify-content: center;
+       }
+       #expert_partners .card .text.right{
+        width: 100%;
+        text-align: center;
+       }
+       #expert_partners h2.text{
+        margin-top: 35px;
+        font-size: 28px;
        }
     }
     
