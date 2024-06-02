@@ -499,9 +499,6 @@ display: flex;
   .conteiner-small p{
   padding: 0 50px;
   }
-  .conteiner-small a{
-    color:white;
-  }
   .conteiner-small button{
     margin: 30px auto;
     padding: 28px 80px;
@@ -528,8 +525,11 @@ display: flex;
   .conteiner-small div{
     padding: 0 50px;
   }
-  .conteiner-small a{
+ footer a{
     color: #9792e4;
+  }
+  #get_started .conteiner-small a{
+    color:white;
   }
   /* --/-- TABLET  -- \--  */
      /* da 0 a 992px  */
