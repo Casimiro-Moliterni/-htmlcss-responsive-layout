@@ -500,7 +500,7 @@ display: flex;
   padding: 0 50px;
   }
   .conteiner-small a{
-    color: inherit;
+    color:white;
   }
   .conteiner-small button{
     margin: 30px auto;
