@@ -316,6 +316,7 @@ justify-content: center;
   padding:20px 35px 40px 10px ;
   display: flex;
   align-items: center;
+  gap: 60px;
 }
 
 #expert_partners .card .img-left{
