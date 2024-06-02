@@ -170,6 +170,9 @@ header .conteiner li a{
 
 
  /* --/-- SECTION INTRO -- \--  */
+ #intro{
+  padding-bottom: 40px;
+ }
  #intro .col{
    width: calc(100% / 3);
    margin-bottom: 20px;
@@ -350,6 +353,184 @@ display: flex;
   color: #9792E4;
   padding-bottom: 45px;
 }
+/* # benefits  */
+#benefits{
+  padding-top: 70px;
+  background-color: #9792E4;
+  padding-bottom: 15px;
+}
+#benefits .row{
+  margin-left: -15px;
+  margin-right: -15px;
+}
+#benefits .col{
+  width: calc(100% / 3);
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+#benefits .card.benefits{
+  padding: 25px 35px 30px 30px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: justify;
+}
+#benefits h3{
+  color: #9792E4;
+  padding-bottom: 15px;
+}
+#benefits .card p{
+  text-align: left;
+  padding-bottom: 24px;
+}
+
+.btn.benefit{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9792E4;
+  color: white;
+  font-weight: 600;
+}
+#benefits h2{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 55px;
+}
+#benefits .col .card h2{
+  color: #9792E4;
+  text-align: start;
+  font-size: 50px;
+  padding-bottom: 0;
+  }
+
+  /* #linkedin */
+  #linkedin{
+    padding-top: 90px;
+    padding-bottom: 140px;
+  }
+  #linkedin .row{
+    padding: 0 40px;
+    gap: 90px;
+  }
+  #linkedin .col{
+    width: calc(100% / 3);
+  }
+  #linkedin .col .card  h2{
+    color: #9792e4;
+    font-size: 60px;
+    padding-bottom: 15px;
+  }
+  #linkedin .col .card.right{
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  #linkedin .col .img{
+    width: 240px;
+    height: 100%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    position: relative;
+  }
+  #linkedin .col .img img{
+    height: 100%;
+    width: 240px;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+  #linkedin .card.right .img::before{
+    content:'❝' ;
+    color: #9792E4;
+    position: absolute;
+    z-index: 11;
+    font-size: 150px;
+    top: -18%;
+    right:0%;
+  }
+  .p-padding{
+  padding-bottom: 60px;
+  }
+  #linkedin .card p{
+    text-align: justify;
+  }
+  #linkedin .card.right p{
+    color: #9792e4;
+    font-size:30px ;
+    font-weight:600 ;
+    text-align: left;
+    line-height: 1.2;
+    padding-bottom: 20px;
+  }
+  #linkedin .card.right button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #9792E4;
+    gap: 10px;
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+  #get_started{
+    background-color: #9792e4;
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+  }
+  .conteiner-small{
+    width: 30%;
+    margin: 0 auto;
+  }
+  .conteiner-small h2{
+    padding-top: 5px;
+    font-size: 45px;
+  }
+  .conteiner-small .h2_gold{
+    padding-top: 10px;
+  font-size: 80px;
+  color: #FDC15F;
+  }
+  .conteiner-small p{
+  padding: 0 50px;
+  }
+  .conteiner-small a{
+    color: inherit;
+  }
+  .conteiner-small button{
+    margin: 30px auto;
+    padding: 28px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background-color: white;
+    color: #9792e4;
+    border-radius: 40px;
+  }
+  footer .conteiner-small{
+    width: 25%;
+  }
+  footer{
+    background-color: #333333;
+    padding: 40px 0 35px 0;
+    text-align: center;
+    color: white;
+  }
+  .conteiner-small p{
+    padding-bottom: 60px;
+  }
+  .conteiner-small div{
+    padding: 0 50px;
+  }
+  .conteiner-small a{
+    color: #9792e4;
+  }
   /* --/-- TABLET  -- \--  */
      /* da 0 a 992px  */
 
@@ -418,6 +599,34 @@ display: flex;
      #expert_partners .card .text{
       width: 65%;
      }
+     #benefits .col{
+      width: calc(100% / 2);
+    }
+    #linkedin .row{
+      gap: 60px;
+      padding: 0;
+    }
+    #linkedin  .col-grow{
+       flex-grow: 1;
+    }
+    #linkedin .col-grow .card{
+      padding: 0 20px;
+    }
+    #linkedin .col-grow .card h2{
+       padding-bottom: 40px;
+    }
+    #linkedin .col-grow .card.right p{
+       font-size: 20px;
+    }
+    #linkedin .col .card.right {
+      padding: 0px 0px;
+    }
+    .conteiner-small{
+      width: 80%;
+    }
+    footer .conteiner-small{
+      width: 65%;
+    }
     }
      /* --/-- MOBILE  -- \--  */
      /* da 0 a 768px  */
@@ -482,5 +691,41 @@ display: flex;
         margin-top: 35px;
         font-size: 28px;
        }
+       #benefits .col{
+        width: calc(100% / 1);
+      }
+      #benefits h2{
+        font-size: 35px;
+      }
+      #benefits .col .card h2{
+        padding-bottom: 10px;
+      }
+      #linkedin .col{
+        width: calc(100% / 1);
+      }
+      #linkedin .col .card.right {
+        align-items: start;
+      }
+      #linkedin .col.col-grow h2{
+        font-size: 40px;
+      }
+      .conteiner-small h2{
+        font-size: 35px;
+      }
+      .conteiner-small .h2_gold{
+      font-size: 60px;
+      }
+      .conteiner-small p{
+        padding: 0 10px;
+        }
+        .conteiner-small button{
+          padding: 20px 60px;
+        }
+        footer .conteiner-small{
+          width: 85%;
+        }
+        footer .conteiner-small p{
+          padding-bottom: 40px;
+        }
     }
     
